@@ -1,0 +1,133 @@
+[{
+        "id": 1,
+        "picture": "https://example.com/pic1.jpg",
+        "title": "Clean water for children",
+        "category": "Health",
+        "categoryBgColor": "#3498db",
+        "cardBgColor": "#ecf0f1",
+        "textButtonBgColor": "#2ecc71",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": "$99.99"
+    },
+    {
+        "id": 2,
+        "picture": "https://example.com/pic2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#f5b7b1",
+        "textButtonBgColor": "#e67e22",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "price": "$49.99"
+    },
+    {
+        "id": 3,
+        "picture": "https://example.com/pic2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#f5b7b1",
+        "textButtonBgColor": "#e67e22",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "price": "$49.99"
+    },
+    {
+        "id": 4,
+        "picture": "https://example.com/pic2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#f5b7b1",
+        "textButtonBgColor": "#e67e22",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "price": "$49.99"
+    },
+    {
+        "id": 5,
+        "picture": "https://example.com/pic2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#f5b7b1",
+        "textButtonBgColor": "#e67e22",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "price": "$49.99"
+    },
+    {
+        "id": 6,
+        "picture": "https://example.com/pic2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#f5b7b1",
+        "textButtonBgColor": "#e67e22",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "price": "$49.99"
+    },
+    {
+        "id": 7,
+        "picture": "https://example.com/pic2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#f5b7b1",
+        "textButtonBgColor": "#e67e22",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "price": "$49.99"
+    },
+    {
+        "id": 8,
+        "picture": "https://example.com/pic2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "categoryBgColor": "#e74c3c",
+        "cardBgColor": "#f5b7b1",
+        "textButtonBgColor": "#e67e22",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "price": "$49.99"
+    },
+    {
+        "id": 9,
+        "picture": "https://example.com/pic12.jpg",
+        "title": "Product 12",
+        "category": "Home Decor",
+        "categoryBgColor": "#8e44ad",
+        "cardBgColor": "#d2b4de",
+        "textButtonBgColor": "#9b59b6",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": "$29.99"
+    },
+    {
+        "id": 10,
+        "picture": "https://example.com/pic12.jpg",
+        "title": "Product 12",
+        "category": "Home Decor",
+        "categoryBgColor": "#8e44ad",
+        "cardBgColor": "#d2b4de",
+        "textButtonBgColor": "#9b59b6",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": "$29.99"
+    },
+    {
+        "id": 11,
+        "picture": "https://example.com/pic12.jpg",
+        "title": "Product 12",
+        "category": "Home Decor",
+        "categoryBgColor": "#8e44ad",
+        "cardBgColor": "#d2b4de",
+        "textButtonBgColor": "#9b59b6",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": "$29.99"
+    },
+    {
+        "id": 12,
+        "picture": "https://example.com/pic12.jpg",
+        "title": "Product 12",
+        "category": "Home Decor",
+        "categoryBgColor": "#8e44ad",
+        "cardBgColor": "#d2b4de",
+        "textButtonBgColor": "#9b59b6",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": "$29.99"
+    }
+]

@@ -3,6 +3,7 @@ import Root from "../components/Root/Root";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Home from "../components/Home/Home";
 import Statistics from "../components/Statistics/Statistics";
+import Donation from "../components/Donation/Donation";
 
 const Route = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const Route = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>
+            },
+            {
+                path: "/donation",
+                element: <Donation></Donation>
             },
             {
                 path: "/statistics",

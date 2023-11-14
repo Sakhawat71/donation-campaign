@@ -1,27 +1,38 @@
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
+
+    // const links = <>
+    // <li><NavLink className="text-custom-red" to="/">Home</NavLink></li>
+    // <li><NavLink to="/donation">Donation</NavLink></li>
+    // <li><NavLink to="/statistics">Statistics</NavLink></li>
+
+    // </>
+
     return (
-        <div className="navbar bg-base-100">
+        <nav className="navbar bg-base-100 py-5">
+
             <div className="flex-1">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <NavLink to="/">
+                    <figure className="">
+                        <img className="w-44" src="/src/img/logo.png" alt="" />
+                    </figure>
+                </NavLink>
             </div>
-            <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
-                    <li><a>Link</a></li>
-                    <li>
-                        <details>
-                            <summary>
-                                Parent
-                            </summary>
-                            <ul className="p-2 bg-base-100">
-                                <li><a>Link 1</a></li>
-                                <li><a>Link 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
+
+            <div className="flex-none hidden sm:block ">
+                <ul className=" menu-horizontal text-custom-black font-normal text-[18px] px-1 gap-11">
+
+                    <li><NavLink className={({ isActive, isPanding }) => isPanding ? 'pending' : isActive ? 'text-custom-red font-semibold underline' : ''} to="/">Home</NavLink></li>
+
+                    <li><NavLink className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "text-custom-red font-semibold underline" : ""
+                    } to="/donation">Donation</NavLink></li>
+
+                    <li><NavLink className={({ isActive, isPanding }) => isPanding ? 'pending' : isActive ? 'text-custom-red font-semibold underline' : ''} to="/statistics">Statistics</NavLink></li>
                 </ul>
             </div>
-        </div>
+        </nav>
     );
 };
 
