@@ -21,7 +21,7 @@ const DonationDetails = () => {
 
     const handelDonetionComplete = () =>{
         saveDonationData(+id)
-        toast('hello')
+        toast('Donation done successfully')
     }
 
 
