@@ -1,16 +1,17 @@
 import { useLoaderData } from "react-router-dom";
-import DonateCarts from "../DonateCarts/DonateCarts";
+import DonateCards from "../DonateCards/DonateCards";
 import Banner from "../Banner/Banner";
 
 
 const Home = () => {
 
     const donateCartsData = useLoaderData();
+    console.log(donateCartsData)
 
     return (
         <div>
             <Banner></Banner>
-            <DonateCarts donateCartsData={donateCartsData}></DonateCarts>
+            <DonateCards donateCartsData={donateCartsData}></DonateCards>
         </div>
     );
 };
