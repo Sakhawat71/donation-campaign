@@ -21,7 +21,7 @@ const Donations = () => {
 
 
     return (
-        <div>
+        <div className="my-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
             {
                 donatedCard?.map(donated => <Donation
                     key={donated.id}
