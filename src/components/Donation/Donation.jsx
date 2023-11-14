@@ -1,31 +1,16 @@
-import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
-import { getStordDonationData } from "../../utility/localStorage";
+import PropTypes from 'prop-types';
 
-const Donation = () => {
-
-    const donations = useLoaderData();
-    const [donatedCard,setDonatedCard] = useState([])
- 
-
-    useEffect(()=>{
-        const donatedId = getStordDonationData();
-
-        if(donatedId.length > 0){
-            const totalDonate = donations.filter(donation => donatedId.includes(donation.id)) ;
-
-            setDonatedCard(totalDonate); 
-        }
-    },[donations])
-
-
+const Donation = ({donated}) => {
+    console.log(donated)
     return (
         <div>
-            {
-                donatedCard.map(donated => )
-            } 
+            
         </div>
     );
+};
+
+Donation.propTypes = {
+    donated: PropTypes.object,
 };
 
 export default Donation;

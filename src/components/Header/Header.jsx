@@ -27,7 +27,7 @@ const Header = () => {
 
                     <li><NavLink className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "text-custom-red font-semibold underline" : ""
-                    } to="/donation">Donation</NavLink></li>
+                    } to="/donations">Donations</NavLink></li>
 
                     <li><NavLink className={({ isActive, isPanding }) => isPanding ? 'pending' : isActive ? 'text-custom-red font-semibold underline' : ''} to="/statistics">Statistics</NavLink></li>
                 </ul>

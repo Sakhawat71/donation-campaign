@@ -3,7 +3,7 @@ import Root from "../components/Root/Root";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Home from "../components/Home/Home";
 import Statistics from "../components/Statistics/Statistics";
-import Donation from "../components/Donation/Donation";
+import Donations from "../components/Donations/Donations";
 import DonationDetails from "../components/DonationDetails/DonationDetails";
 
 const Route = createBrowserRouter([
@@ -18,8 +18,8 @@ const Route = createBrowserRouter([
                 loader: () => fetch('/donate.json')
             },
             {
-                path: "/donation",
-                element: <Donation></Donation>,
+                path: "/donations",
+                element: <Donations></Donations>,
                 loader: () => fetch('/donate.json')
             },
             {
