@@ -2,7 +2,7 @@
     {
         "id": 1,
         "picture": "https://i.ibb.co/1Gwmnm4/Health.png",
-        "title": "Helping Hands for Healthy Lives",
+        "title": "Healthcare Hope Fund",
         "category": "Health",
         "categoryBgColor": "#0052ff33",
         "cardBgColor": "#0052FF26",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "picture": "https://i.ibb.co/dmcbkhj/Education.png",
-        "title": "Educate Dreams, Ignite Futures",
+        "title": "Education for All",
         "category": "Education",
         "categoryBgColor": "#FF444A33",
         "cardBgColor": "#FF444A26",
@@ -35,7 +35,7 @@
     {
         "id": 4,
         "picture": "https://i.ibb.co/BLdsTDs/Food.png",
-        "title": "Nourishing Lives, Fighting Hunger",
+        "title": "Nourish, Thrive, Hope",
         "category": "Food",
         "categoryBgColor": "#F8714733",
         "cardBgColor": "#F8714726",
@@ -68,7 +68,7 @@
     {
         "id": 7,
         "picture": "https://i.ibb.co/dmcbkhj/Education.png",
-        "title": "Books for Brighter Tomorrows",
+        "title": "Bright Minds Initiative",
         "category": "Education",
         "categoryBgColor": "#FF444A33",
         "cardBgColor": "#FF444A26",
@@ -79,7 +79,7 @@
     {
         "id": 8,
         "picture": "https://i.ibb.co/1Gwmnm4/Health.png",
-        "title": "Caring for Communities in Need",
+        "title": "Healing Hearts Campaign",
         "category": "Health",
         "categoryBgColor": "#0052ff33",
         "cardBgColor": "#0052FF26",
@@ -90,7 +90,7 @@
     {
         "id": 9,
         "picture": "https://i.ibb.co/1Gwmnm4/Health.png",
-        "title": "Empower Health, Transform Lives",
+        "title": "Caring for All Initiative",
         "category": "Health",
         "categoryBgColor": "#0052ff33",
         "cardBgColor": "#0052FF26",
@@ -101,7 +101,7 @@
     {
         "id": 10,
         "picture": "https://i.ibb.co/dmcbkhj/Education.png",
-        "title": "Building Scholars, Changing Lives",
+        "title": "Educate Every Child",
         "category": "Education",
         "categoryBgColor": "#FF444A33",
         "cardBgColor": "#FF444A26",
@@ -123,7 +123,7 @@
     {
         "id": 12,
         "picture": "https://i.ibb.co/BLdsTDs/Food.png",
-        "title": "Share the Bounty of Kindness",
+        "title": "Share the Harvest",
         "category": "Food",
         "categoryBgColor": "#F8714733",
         "cardBgColor": "#F8714726",

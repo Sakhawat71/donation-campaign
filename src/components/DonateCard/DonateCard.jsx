@@ -7,13 +7,15 @@ const DonateCard = ({ donate }) => {
 
     return (
         <Link >
-            <div className="card card-compact rounded-md">
+            <div className="card card-compact rounded-md ">
                 <figure><img src={picture} alt="" /></figure>
 
-                <div style={{background: cardBgColor}} className="px-2 py-5 rounded-b-md ">
-                    <p style={{color: textButtonBgColor, background: categoryBgColor}} className={`py-2 px-4 mx-auto `}>{category}</p>
+                <div style={{background: cardBgColor}} className="px-2 py-5 rounded-b-md space-y-3">
 
-                    <h2 style={{color: textButtonBgColor}} className="text-xl font-semibold">{title}</h2>
+                    <span style={{color: textButtonBgColor, background: categoryBgColor}} className="py-2 px-2 rounded-md text-[14px] font-medium">{category}</span>
+
+                    <h2 style={{color: textButtonBgColor}} className="text-[20px] font-semibold">{title}</h2>
+
                 </div>
             </div>
         </Link>
