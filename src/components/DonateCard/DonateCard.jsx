@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const DonateCard = ({ donate }) => {
 
-    const { picture, category, title, textButtonBgColor, categoryBgColor, cardBgColor } = donate || {};
+    const {id, picture, category, title, textButtonBgColor, categoryBgColor, cardBgColor } = donate || {};
 
     return (
-        <Link >
+        <Link to={`/donation-details/${id}`}>
             <div className="card card-compact rounded-md ">
                 <figure><img src={picture} alt="" /></figure>
 
