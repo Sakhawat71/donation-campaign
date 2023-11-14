@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Donation = ({ donated }) => {
 
-    const { picture, title, price, category, categoryBgColor, textButtonBgColor, cardBgColor } = donated;
+    const {id, picture, title, price, category, categoryBgColor, textButtonBgColor, cardBgColor } = donated;
 
     console.log(donated)
     return (
@@ -21,7 +22,9 @@ const Donation = ({ donated }) => {
 
                 <p style={{ color: textButtonBgColor }} className='font-semibold'>{price}</p>
 
-                <button style={{ background: textButtonBgColor }} className='font-semibold text-neutral-50 px-4 py-2 rounded-md'>View Details</button>
+                <Link to={`/donation-details/${id}`}>
+                    <button style={{ background: textButtonBgColor }} className=' mt-3 font-semibold text-neutral-50 px-4 py-2 rounded-md'>View Details</button>
+                </Link>
             </div>
         </div>
     );
