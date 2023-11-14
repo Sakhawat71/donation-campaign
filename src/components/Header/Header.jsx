@@ -15,7 +15,7 @@ const Header = () => {
             <div className="flex-1">
                 <NavLink to="/">
                     <figure className="">
-                        <img className="w-44" src="/src/img/logo.png" alt="" />
+                        <img className="w-44" src="https://i.ibb.co/QYfH7ph/Logo.png" alt="" />
                     </figure>
                 </NavLink>
             </div>
