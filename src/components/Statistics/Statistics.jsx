@@ -1,59 +1,62 @@
-
-import { PieChart, Pie, Tooltip, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell } from 'recharts';
 import { getStordDonationData } from '../../utility/localStorage';
 
-
 const Statistics = () => {
-    
-    const myDonetaion = getStordDonationData()
-    console.log(myDonetaion.length)
 
-    const data01 = [
-        { name: 'Group A', value: 400 },
-        { name: 'Group B', value: 300 },
-        { name: 'Group C', value: 300 },
-        { name: 'Group D', value: 200 },
-        { name: 'Group E', value: 278 },
-        { name: 'Group F', value: 189 },
+    const myDonation = getStordDonationData() || 0;
+    const myTotalDonation = myDonation.length;
+    const reaminDonation = 12 - myTotalDonation;
+
+
+    const data = [
+        { name: 'Remain Donation', value: reaminDonation },
+        { name: 'My Donation', value: myTotalDonation }
+
     ];
 
-    const data02 = [
-        { name: 'Group A', value: 2400 },
-        { name: 'Group B', value: 4567 },
-        { name: 'Group C', value: 1398 },
-        { name: 'Group D', value: 9800 },
-        { name: 'Group E', value: 3908 },
-        { name: 'Group F', value: 4800 },
-    ];
+    const COLORS = ['#00C49F', '#FF444A'];
 
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+        const RADIAN = Math.PI / 12;
+        const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+        const x = cx + radius * Math.cos(-midAngle * RADIAN);
+        const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
+        return (
+            <text className='font-bold text-xl' x={x} y={y} fill="#FFFFFF" textAnchor="middle" dominantBaseline="central">
+                {`${(percent * 100).toFixed(0)}%`}
+            </text>
+        );
+    };
 
     return (
-        <div className='border-2'>
-            <ResponsiveContainer width="100%" height="100%">
-                <PieChart width={400} height={400}>
-                    <Pie
-                        dataKey="value"
-                        isAnimationActive={false}
-                        data={data01}
-                        cx="50%"
-                        cy="50%"
-                        outerRadius={80}
-                        fill="#FF444A"
-                        label
-                    />
-                    <Pie
-                        dataKey="value"
-                        data={data02}
-                        cx={500}
-                        cy={200}
-                        innerRadius={40}
-                        outerRadius={80}
-                        fill="#0B0B0B"
-                    />
-                    <Tooltip />
-                </PieChart>
-            </ResponsiveContainer>
+        <div className='flex flex-col items-center justify-center '>
+
+            <PieChart width={400} height={400}>
+                <Pie
+                    data={data}
+                    cx="50%"
+                    cy="50%"
+                    labelLine={false}
+                    label={renderCustomizedLabel}
+                    outerRadius={80}
+                    fill="#8884d8"
+                    dataKey="value"
+                >
+                    {data.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                    ))}
+                </Pie>
+            </PieChart>
+
+            <div className='gap-5 font-bold text-2xl mb-10'>
+                <span className='mx-10'>
+                Your Donation <span className='mx-2 px-4 py-[1px] rounded-full bg-custom-red'></span>
+                </span>
+                <span className='mx-10'>
+                Total Donation <span className='rounded-full px-4 py-[1px] mx-2 bg-[#00C49F]'></span>
+                </span>
+            </div>
         </div>
     );
 };

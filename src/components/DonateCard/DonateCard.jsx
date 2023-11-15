@@ -8,7 +8,7 @@ const DonateCard = ({ donate }) => {
     return (
         <Link to={`/donation-details/${id}`}>
             <div className="card card-compact rounded-md ">
-                <figure><img src={picture} alt="" /></figure>
+                <figure ><img className='w-full' src={picture} alt="" /></figure>
 
                 <div style={{background: cardBgColor}} className="px-2 py-5 rounded-b-md space-y-3">
 
