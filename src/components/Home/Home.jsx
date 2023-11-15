@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import DonateCards from "../DonateCards/DonateCards";
-import Banner from "../Banner/Banner";
+import Header from "../Header/Header";
 
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
 
     return (
         <div>
-            <Banner></Banner>
+            <Header></Header>
             <DonateCards donateCartsData={donateCartsData}></DonateCards>
         </div>
     );
