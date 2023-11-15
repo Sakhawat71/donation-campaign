@@ -1,10 +1,15 @@
 import { NavLink } from "react-router-dom";
-
+import { GrClose, GrMenu } from 'react-icons/gr';
+import { useState } from "react";
 
 const Navbar = () => {
+
+    const [open, setOpen] = useState(false);
+
+
     return (
         <nav className="navbar bg-base-100 py-5">
-            
+
             <div className="flex-1">
                 <NavLink to="/">
                     <figure className="">
@@ -24,6 +29,34 @@ const Navbar = () => {
 
                     <li><NavLink className={({ isActive, isPanding }) => isPanding ? 'pending' : isActive ? 'text-custom-red font-semibold underline' : ''} to="/statistics">Statistics</NavLink></li>
                 </ul>
+            </div>
+
+            <div onClick={() => setOpen(!open)} className="md:hidden">
+                <details className="dropdown dropdown-end">
+                    <summary className="m-1 btn text-2xl">
+                        {
+                            open === true ? <GrClose ></GrClose> : <GrMenu ></GrMenu>
+                        }
+                    </summary>
+                    <ul className="p-2 space-y-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-auto">
+
+                        <NavLink
+                            className="mx-2 bg-[#79C23F26] py-2 px-4 font-semibold text-xl rounded-md"
+                            to="/"
+                        >Home</NavLink>
+
+                        <NavLink
+                            className="mx-2 bg-[#79C23F26] py-2 px-4 font-semibold text-xl rounded-md"
+                            to="/donations"
+                        >Donations</NavLink>
+
+                        <NavLink
+                            className="mx-2 bg-[#79C23F26] py-2 px-4 font-semibold text-xl rounded-md"
+                            to="/statistics"
+                        >Statistics</NavLink>
+
+                    </ul>
+                </details>
             </div>
         </nav>
     );
