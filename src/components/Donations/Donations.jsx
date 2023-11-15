@@ -9,7 +9,7 @@ const Donations = () => {
 
     const [donatedCard, setDonatedCard] = useState([])
     const [showCard, setShowCard] = useState(4)
-
+    
     useEffect(() => {
         const donatedId = getStordDonationData();
 
@@ -19,7 +19,7 @@ const Donations = () => {
             setDonatedCard(totalDonate);
         }
     }, [donations])
-
+    
 
     return (
         <div className="my-20 ">

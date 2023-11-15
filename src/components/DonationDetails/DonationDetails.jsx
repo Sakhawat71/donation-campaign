@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {  useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { saveDonationData } from "../../utility/localStorage";
@@ -19,7 +19,7 @@ const DonationDetails = () => {
     }, [id, donations])
 
 
-    const handelDonetionComplete = () =>{
+    const handelDonetionComplete = () => {
         saveDonationData(+id)
         toast('Donation done successfully')
     }
@@ -27,11 +27,19 @@ const DonationDetails = () => {
 
     return (
         <div className="my-16">
-            <figure className="relative my-5">
-                <img className="w-screen max-h-[500px]" src={picture} alt="" />
+            <figure
+                className=" w-full h-72 md:h-96 lg:h-[480px] xl:h-[550px] 2xl:h-[700px] mb-12 relative rounded-md"
+                style={{ backgroundImage: `url(${picture})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '400px' }}
+            >
 
-                <div >
-                    <button onClick={handelDonetionComplete} className=" bg-custom-red font-semibold text-xl rounded-md text-neutral-50 py-4 px-6 bottom-2 absolute">Donate {price}</button>
+                <div className="bg-black bg-opacity-60 absolute left-0 bottom-0 p-3 md:p-5 lg:p-10 w-full rounded-b-md">
+
+                    <button
+                        onClick={handelDonetionComplete}
+                        className=" bg-custom-red font-semibold text-xl rounded-md text-neutral-50 py-4 px-6 bottom-2 absolute"
+                        style={{ backgroundColor: "rgb(255, 68, 74)" }}
+                    >Donate {price}</button>
+
                     <ToastContainer></ToastContainer>
                 </div>
 

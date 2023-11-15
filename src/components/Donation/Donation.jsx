@@ -5,7 +5,6 @@ const Donation = ({ donated }) => {
 
     const {id, picture, title, price, category, categoryBgColor, textButtonBgColor, cardBgColor } = donated;
 
-    console.log(donated)
     return (
         <div style={{ background: cardBgColor }} className='flex items-center gap-6 rounded-md '>
 
