@@ -11,14 +11,13 @@ const Statistics = () => {
     const data = [
         { name: 'Remain Donation', value: reaminDonation },
         { name: 'My Donation', value: myTotalDonation }
-
     ];
 
     const COLORS = ['#00C49F', '#FF444A'];
 
-    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+    const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent,  }) => {
         const RADIAN = Math.PI / 12;
-        const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
+        const radius = innerRadius + (outerRadius - innerRadius) * 0.65;
         const x = cx + radius * Math.cos(-midAngle * RADIAN);
         const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
@@ -39,7 +38,7 @@ const Statistics = () => {
                     cy="50%"
                     labelLine={false}
                     label={renderCustomizedLabel}
-                    outerRadius={80}
+                    outerRadius={150}
                     fill="#8884d8"
                     dataKey="value"
                 >
@@ -49,7 +48,7 @@ const Statistics = () => {
                 </Pie>
             </PieChart>
 
-            <div className='gap-5 font-bold text-2xl mb-10'>
+            <div className='flex flex-col md:flex-row gap-5 font-bold text-2xl mb-10'>
                 <span className='mx-10'>
                 Your Donation <span className='mx-2 px-4 py-[1px] rounded-full bg-custom-red'></span>
                 </span>
